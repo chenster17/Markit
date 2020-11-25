@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, Input, OnInit} from '@angular/core';
 
 @Component({
   selector: 'app-mainpage',
@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./mainpage.component.css']
 })
 export class MainpageComponent implements OnInit {
-
+  @Input() mainpage: string;
   constructor() { }
 
   ngOnInit(): void {
